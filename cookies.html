@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Erik Sihvonen Art</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  {
+    box-sizing: border-box; 
+  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  /*these are the settings for the header, I can change the color of the header and text from here as well as the font size of the text*/
+  .header {
+    padding: 80px;
+    text-align: center;
+    background: #3b448f;
+    color: rgb(0, 0, 0);
+  }
+    .header h1 {
+      font-size: 40px;
+    }
+/* navigation bar settings (where about and gallery are)*/
+   .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    }
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+      .navbar a.right {
+        float: right;
+      }
+      .navbar a:hover {
+        background-color: #f1f1f1;
+        color: black;
+      }
+      .navbar a.active {
+        background-color: #666;
+        color: white;
+      }
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+    .side {
+      -ms-flex: 30%; /* IE10 */
+      flex: 30%;
+      background-color: #9b9b9b;
+      padding: 20px;
+    }
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Gallery</h1>
+      <p>
+      COOKIES FAQ
+      </p>
+</div>
+<div class="navbar">
+  <a href="https://satanspotato.github.io" class="active">About</a>
+  <a href="https://satanspotato.github.io/gallery.html">Gallery</a>
+</div>
+    <div class="main">
+      <h2>I don't actually use cookies I just wanted to include it anyway</h2>
+  </div>
+  <div class="footer">
+    <a href="https://validator.w3.org/check?uri=referer">
+      <img style="border:none;height:31px;width:31px;text-decoration:none;" src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png" alt="Valid HTML"></a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:none;width:88px;height:31px;text-decoration:none;" src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png" alt="Valid CSS"></a>  
+  </div>
+  
+</body>
+
+</html>
